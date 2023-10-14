@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page with Tabs</title>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+    <title>Disintegrate Distress</title>
+
     <!-- Styles for 'Home' page -->
     <style>
         header {
@@ -15,10 +20,19 @@
 
         body {
             font-family: 'Times New Roman', Times, serif, sans-serif;
+            font-weight: normal;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+        }
+
+        h1, h2, h3 {
+            padding-top: 2%;
+            padding-bottom: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+            text-align: center;
         }
 
         .container {
@@ -47,6 +61,8 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            -webkit-transition: 0.25s;
+            transition: 0.25s;
         }
 
         ul.tab-list li a:hover {
@@ -113,7 +129,7 @@
             padding-right: 5%;
             font-size: 16px;
             text-align: center;
-            color: white;
+            color: white;   
         }
 
         .grid {
@@ -145,6 +161,100 @@
         .grid-pic {
             height: 30%;
             width: 30%;
+            padding: 12px ;
+        }
+
+        a {
+            display: block;
+            padding: 8px;
+            background-color: #333;
+        }
+
+        article img {
+            margin: 0 auto;
+            padding: 1%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 12px 12px;
+            background-color: black;
+            color: white;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px; 
+            width: 50px; 
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+
+        /* Facebook */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+            width: 25px;
+        }
+            
+        /* Twitter */
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            width: 25px;
+        }
+
+        .home-info {
+            background-color: #333;
+            padding: 1%;
+        }
+
+        .home-info-head {
+            padding-top: 30px;
+            font-size: 185%;
+            color: white;   
+       }
+
+        .home-info-sub-head {
+            font-size: 175%;
+            padding-bottom: 0%;
+            font-weight: bold;
+            color: white;   
+        }
+
+        .home-info-pic {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 12.5%;
+            height: 12.5%;
+            border-radius: 50%;
+        }
+
+        .home-info-pic-link {
+            background-color: inherit;
+        }
+
+        .lead {
+            text-align: center;
+            font-size: 20px;
+            padding: 0.5%;
+            padding-bottom: 1%;
+            color: white;   
+        }
+
+        .sub {
+            text-align: center;
+            font-size: 115%;
+            padding: 0.5%;
+            padding-bottom: 2%;
+            color: white;   
+        }
+
+        .main-head {
+            padding: 0%;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -166,9 +276,12 @@
             </div>
         </li>
     </ul>
-    <br><br>
 
     <main>
+
+        <div>
+            <h1 class="main-head">Welcome to Disintegrate Distress!</h1>
+        </div>
 
         <!-- Grid for Donate + Apply for Home Screen -->
         <div class="grid-container">
@@ -193,11 +306,52 @@
             </div>
         </div>
 
+        <!-- Company Information for Home Screen -->
+        <div class="home-info">
+            <h2 class="home-info-head"><b>Building a brighter future for the dreamchasers</b></h2>
+            <p class="lead" style="font-size: 125%;">Our goal as a company is to offer various programs and resources to individuals wanting to pursue their dreams.</p>
+
+            <article class="home-info-article">
+                <a href="Services.html" class="home-info-pic-link">
+                    <img src="images/brain.jpg" alt="distress1" class="home-info-pic">
+                </a>
+                <h3 class="home-info-sub-head">Programs + Resources</h3>
+                <p class="sub">We offer various resources to those in pursuit of their dreams, so you only have to worry about dreamchasing.</p>
+            </article>
+
+            <article class="home-info-article">
+                <a href="extras.html" class="home-info-pic-link">
+                    <img src="images/girlcry2.webp" alt="distress2" class="home-info-pic">
+                </a>
+                <h3 class="home-info-sub-head">Servicers</h3>
+                <p class="sub">We work with various individuals and companies to offer as much help as possible and as need.</p>
+            </article>
+
+            <article class="home-info-article">
+                <a href="aboutUs.html" class="home-info-pic-link">
+                    <img src="images/Optimized-Distress-2.jpeg" alt="distress3" class="home-info-pic">
+                </a>
+                <h3 class="home-info-sub-head">Stories</h3>
+                <p class="sub">We are only as successful as those that we help, so why not read about what we've done for others.</p>
+            </article>
+        </div>
+
     </main>
 
-    <div class="container">
+    <footer>
+        <div>
+            <p>&copy; Copyright 2023. All Rights Reserved.</p>
+            <p>Webpage Created by: Cameron Chambers</p>
 
-    </div>
+            <!-- Social Media Icons -->
+            <a href="https://facebook.com" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+        </div>
+    </footer>
+
+    <!-- <div class="container">
+
+    </div> -->
 
 
 </body>
