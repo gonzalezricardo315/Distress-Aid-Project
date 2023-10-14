@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page with Tabs</title>
+    <!-- Styles for 'Home' page -->
     <style>
         header {
             background-color: #000000;
@@ -93,13 +94,65 @@
             width: 100px; 
             height: auto; 
         }
+
+        .grid-container {
+            display: grid;
+            column-gap: 25px;
+            grid-template-columns: auto auto;
+            background-color: rgba(108, 117, 125, 0.8);
+            padding: 10px;
+            margin: auto;
+        }
+    
+        .grid-item {
+            display: grid;
+            background-color: rgba(108, 117, 125, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding-top: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 16px;
+            text-align: center;
+            color: white;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+            margin: auto;
+        }
+
+        figure {
+            border: 1px black solid;
+            padding: 4px;
+            margin: auto;
+            /* max-width: auto; */
+        }
+
+        .grid-lead {
+            text-align: center;
+            font-size: 125%;
+            padding: 0.5%;
+            padding-bottom: 1%;
+        }
+
+        .grid-head {
+            font-size: 175%;
+            padding-bottom: 0.125%;
+        }
+
+        .grid-pic {
+            height: 30%;
+            width: 30%;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Disintegrate Distress</h1>
     </header>
-    
 
     <ul class="tab-list">
         <li class="dropdown">
@@ -114,6 +167,33 @@
         </li>
     </ul>
     <br><br>
+
+    <main>
+
+        <!-- Grid for Donate + Apply for Home Screen -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <figure>
+                    <a href="donate.html">
+                        <img src="images/donatenow.jpg" alt="donatenow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Donate Now!</h3>
+                <p class="grid-lead">We are always looking for donations to help those in need, any amount helps!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/applynow2.jpg" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+        </div>
+
+    </main>
 
     <div class="container">
 
