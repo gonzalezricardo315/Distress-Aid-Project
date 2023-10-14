@@ -78,6 +78,42 @@
             display: block;
         }
 
+        .grid-container {
+            display: grid;
+            column-gap: 25px;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto auto;
+            background-color: rgba(108, 117, 125, 0.8);
+            padding: 10px;
+            margin: auto;
+        }
+    
+        .grid-item {
+            display: grid;
+            background-color: rgba(108, 117, 125, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding-top: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 16px;
+            text-align: center;
+            color: white;   
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto auto auto;
+            grid-gap: 20px;
+            margin: auto;
+        }
+
+        .grid-pic {
+            height: 30%;
+            width: 30%;
+            padding: 12px ;
+        }
+
         form {
             display: flex;
             text-align: center;
@@ -142,7 +178,107 @@
 
 
     <div class="container">
-        <p>We will put in information about the services that we will provided here.</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <figure>
+                    <a href="donate.html">
+                        <img src="images/financialRelief.png" alt="donatenow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Donate Now!</h3>
+                <p class="grid-lead">We are always looking for donations to help those in need, any amount helps!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/griefLossRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/harassmentRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/legalRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/mentalRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/naturalDisasterRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/physicalRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/relationshipRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/substanceAbuseRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+
+            <div class="grid-item">
+                <figure>
+                    <a href="apply.html">
+                        <img src="images/warRelief.png" alt="appplynow" class="grid-pic">
+                    </a>
+                </figure>
+                <h3 class="grid-head">Apply Now!</h3>
+                <p class="grid-lead">If you are in need of assistance, apply now to see if you qualify!</p>
+            </div>
+        </div>
     </div>
         
 </body>
