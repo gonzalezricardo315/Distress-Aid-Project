@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <title>Apply Now</title>
         <style>
             header {
@@ -100,10 +102,324 @@
                 width: 100px; 
                 height: auto; 
             }
+
+            h1, h2, h3 {
+                padding-top: 2%;
+                padding-bottom: 1%;
+                padding-left: 2%;
+                padding-right: 2%;
+                text-align: center;
+            }
+
+            .center {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .submit-reset-container {
+                height: 100px;
+                position: relative;
+                border: none;
+            }
+
+            .lead {
+                text-align: center;
+                font-size: 20px;
+                padding: 0.5%;
+                padding-bottom: 1%;
+            }
+
+            .sub {
+                text-align: center;
+                font-size: 115%;
+                padding: 0.5%;
+                padding-bottom: 2%;
+            }
+
+            .grid-lead {
+                text-align: center;
+                font-size: 125%;
+                padding: 0.5%;
+                padding-bottom: 1%;
+            }
+
+            .grid-container {
+                display: grid;
+                column-gap: 25px;
+                grid-template-columns: auto auto;
+                background-color: rgba(108, 117, 125, 0.8);
+                padding: 10px;
+                margin: auto;
+            }
+            
+            .grid-item {
+                display: grid;
+                background-color: rgba(108, 117, 125, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                padding-top: 20px;
+                padding-left: 5%;
+                padding-right: 5%;
+                font-size: 16px;
+                text-align: center;
+                color: white;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-gap: 20px;
+                margin: auto;
+            }
+
+            .grid-pic {
+                height: 30%;
+                width: 30%;
+            }
+
+            .grid-head {
+                font-size: 175%;
+                padding-bottom: 0.125%;
+            }
+
+            .main-head {
+                padding: 1%;
+                font-weight: bold;
+            }
+
+            .home-info {
+                /* background-color: blanchedalmond; */
+                background-image: url('Chasing-dreams.jpg');
+                background-attachment: fixed;
+                padding: 1%;
+            }
+
+            .home-info-head {
+                padding-top: 30px;
+                font-size: 185%;
+            }
+
+            .home-info-sub-head {
+                font-size: 175%;
+                padding-top: 2.5%;
+                padding-bottom: 0%;
+                font-weight: bold;
+            }
+
+            .home-info-pic {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 12.5%;
+                height: 12.5%;
+                border-radius: 50%;
+            }
+
+            .home-info-pic-link {
+                background-color: inherit;
+            }
+
+            #primary-name, #primary-relationship, #primary-number, #secondary-name, #secondary-relationship, #secondary-number {
+                width: 75%;
+                display: inline;
+            }
+
+            .appform-textarea-qs {
+                display: grid;
+                grid-template-columns: auto;
+                column-gap: 25px;
+                padding: auto;
+                margin-right: auto;
+                padding: 16px 16px;
+            }
+
+            .appform-textarea-qs-th {
+                text-align: center;
+
+            }
+
+            .appform-textarea-qs-labels {
+                font-weight: 600; 
+                font-size: 18px;
+            }
+
+            .appformh3 {
+                text-align: left;
+                font-weight: bold;
+            }
+
+            #appformFieldset {
+                display: none;
+            }
+
+            .home-info-article {
+                color: black;
+                padding: inherit;
+            }
+
+            .legend-h2 {
+                font-weight: bold;
+            }
+
+            .appform-personal-info {
+                width: 50%;
+            }
+
+            input[type=text], select {
+                width: 49.5%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+            }
+
+            input[type=date], input[type=tel] {
+                width: 82.5%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+            }
+
+            input[type=text]:focus, input[type=date]:focus, input[type=tel]:focus, select:focus {
+                border: 1px solid black;
+            }
+
+            input[type=button] {
+                display: block;
+                background-color: #55ACEE;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                margin-left: auto;
+                margin-right: auto;
+                cursor: pointer;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            }
+
+            input[type=button]:hover {
+                background-color: #3B5998;
+            }
+
+            button[type=submit], button[type=reset] {
+                background-color: #04AA6D;
+                color: white;
+                border: none;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            }
+
+            button[type=submit]:hover, button[type=reset]:hover {
+                background-color: darkgreen;
+            }
+
+            table {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                width: 100%;
+                padding: 1%;
+            }
+
+            td, th {
+                border: 1px solid black;
+                text-align: left;
+                padding: 1%;
+            }
+
+            table, td, th {
+                border: 1px solid black;
+            }
+
+            form {
+                background-color: lightgrey;
+                padding: 16px 16px;
+            }
+
+            video {
+                display: block;
+                padding: 16px 16px;
+                margin-left: auto;
+                margin-right: auto;
+                height: 300px;
+                width: 300px;
+            }
+
+            figure {
+                border: 1px black solid;
+                padding: 4px;
+                margin: auto;
+            }
+
+            textarea {
+                resize: none;
+                width: 40%;
+                transition: width 0.4s ease-in-out;
+            }
+
+            textarea:focus {
+                width: 100%;
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 30px; 
+                width: 50px; 
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+                width: 25px;
+            }
+                
+            .fa-twitter {
+                background: #55ACEE;
+                color: white;
+                width: 25px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 12px 12px;
+                background-color: #333;
+                color: white;
+            }
+
+            legend {
+                margin: 0 auto;
+                width: 15%;
+            }
         </style>
     </head>
 
     <body>
+        <header>
+            <div class="">
+                <h1 class="main-head">Apply Now!</h1>
+            </div>
+        </header>
+
         <ul class="tab-list">
             <li class="dropdown">
                 <a href="javascript:void(0)">Services</a>
@@ -119,16 +435,234 @@
 
         <main>
 
-            <header>
-                <div class="">
-                    <h1 class="main-head">Apply Now!</h1>
-                    <p class="lead">If you are looking to apply for assistance, please review the information below.</p>    
-                </div>
-            </header>
+            <div>
+                <p class="lead">If you are looking to apply for assistance, please review the information below.</p>
+            </div>
 
-            
+            <!-- Div for 'Apply Now' Form -->
+            <div id="form">
+                <form class="form-grid">
+                    <!-- Button to Show/Hide Application Form -->
+                    <input type="button" onclick="showhideAppForm()" value="Show/Hide Application Form">
+                    <!-- Fieldset for Application Form -->
+                    <fieldset id="appformFieldset">
+                        <legend><h2 class="legend-h2">Application Form</h2></legend><br>
+
+                        <!-- Table for Personal Information -->
+                        <label for="personal-info"><h3 class="appformh3" style="padding-top: 1%;">Personal Information</h3></label>
+                        <table>
+                            <tr>
+                                <th>Name: </th>
+                                <th>
+                                    <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+                                    <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+                                </th>
+                                <th>Date of Birth: </th>
+                                <th><input type="date" id="dob" name="dob" required></th>
+                            </tr>
+                            <tr>
+                                <th>Email Address: </th>
+                                <th><input type="text" id="email" name="email" placeholder="i.e. johndoe@email.com" style="width: 99.5%;" required></th>
+                                <th>Phone Number: </th>
+                                <th><input type="tel" id="phone_number" name="phone_number" placeholder="i.e. (760)555-8194" required></th>
+                            </tr>
+                            <tr>
+                                <th>Home Address: </th>
+                                <th><input type="text" id="address" name="address" placeholder="i.e. 123 West Lane, Cedar City, UT, 84721" style="width: 99.5%;" required></th>
+                                <th>Assistance Needed: </th>
+                                <th>
+                                    <select id="assistance_needed" name="assistance_needed" style="width: 98%;" required>
+                                        <option value="financial">Financial</option>
+                                        <option value="resource">Resource</option>
+                                        <option value="coaching">Coaching</option>
+                                        <option value="educational">Educational</option>
+                                        <option value="encouragement">Encouragement</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </th>
+                            </tr>
+                        </table><br>
+
+                        <!-- Table for Emergency Contact Information -->
+                        <label for="em-contacts"><h3 class="appformh3">Emergency Contacts</h3></label>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Name</th>
+                                <th>Relationship</th>
+                                <th>Contact Number</th>
+                            </tr>
+                            <tr>
+                                <th>Primary</th>
+                                <th><input type="text" id="primary-name" name="primary-name" placeholder="i.e. John Doe" required></th>
+                                <th>
+                                    <select id="primary-relationship" name="primary-relationship" required>
+                                        <option value="mom">Mother</option>
+                                        <option value="dad">Father</option>
+                                        <option value="bro">Brother</option>
+                                        <option value="sis">Sister</option>
+                                        <option value="gp">Grandmother</option>
+                                        <option value="gp">Grandfather</option>
+                                        <option value="aunt">Aunt</option>
+                                        <option value="unc">Uncle</option>
+                                        <option value="friend">Friend</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </th>
+                                <th><input type="tel" id="primary-number" name="primary-number" maxlength="13" placeholder="i.e. (555)555-5555" required></th>
+                            </tr>
+                            <tr>
+                                <th>Secondary</th>
+                                <th><input type="text" id="secondary-name" name="secondary-name" placeholder="i.e. Jane Doe" required></th>
+                                <th>
+                                    <select id="secondary-relationship" name="secondary-relationship" required>
+                                        <option value="mom">Mother</option>
+                                        <option value="dad">Father</option>
+                                        <option value="bro">Brother</option>
+                                        <option value="sis">Sister</option>
+                                        <option value="gp">Grandmother</option>
+                                        <option value="gp">Grandfather</option>
+                                        <option value="aunt">Aunt</option>
+                                        <option value="unc">Uncle</option>
+                                        <option value="friend">Friend</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </th>
+                                <th><input type="tel" id="secondary-number" name="secondary-number" maxlength="13" placeholder="i.e. (555)555-5555" required></th>
+                            </tr>
+                        </table><br>
+
+                        <!-- Table for 'textarea' Questions -->
+                        <label for="appform-textarea-qs"><h3 class="appformh3">Open Ended Questions</h3></label>
+                        <table>
+                            <tr>
+                                <th class="appform-textarea-qs-th">Passions</th>
+                                <th>
+                                    <div class="appform-textarea-qs">
+                                        <textarea id="myText" name="passions" cols="50" rows="10" placeholder="What are you passionate about? This helps us determine where we should offer assistance." required></textarea>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="appform-textarea-qs-th">Skills</th>
+                                <th>
+                                    <div class="appform-textarea-qs">
+                                        <textarea name="skills" cols="50" rows="10" placeholder="Skills related to your dreams & passions! This helps us determine what skills you may already have." required></textarea>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="appform-textarea-qs-th">Education</th>
+                                <th>
+                                    <div class="appform-textarea-qs">
+                                        <textarea name="education" cols="50" rows="10" placeholder="Tell us about the education you have in the area(s) you're passionate about! This helps us determine how knowledgable you are about your passions/dreams." required></textarea>
+                                    </div> 
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="appform-textarea-qs-th">Income Information</th>
+                                <th>
+                                    <div class="appform-textarea-qs">
+                                        <textarea name="education" cols="50" rows="10" placeholder="*IF NEEDED, MAKE ACTIVE ONLY IF FINANCIAL ASSISTANCE SELECTED ABOVE*"></textarea>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table><br>
+
+                        <!-- Table for 'Yes/No' Questions -->
+                        <label for="appform-yesno-qs"><h3 class="appformh3">Yes/No Questions</h3></label>
+                        <table>
+                            <tr>
+                                <th style="width: 45%;">Are you in need immediate assistance?</th>
+                                <th>
+                                    <label for="yes"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)">Yes</label>
+                                    <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">No</label>
+                                    <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">Other: </label>
+                                    <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Have you applied for assistance before?</th>
+                                <th>
+                                    <label for="yes"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)">Yes</label>
+                                    <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">No</label>
+                                    <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">Other: </label>
+                                    <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Is the type of assistance needed offered?</th>
+                                <th>
+                                    <label for="yes"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)">Yes</label>
+                                    <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">No</label>
+                                    <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">Other: </label>
+                                    <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Have you checked our 'Extras' page for external resources?</th>
+                                <th>
+                                    <label for="yes"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)">Yes</label>
+                                    <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">No</label>
+                                    <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">Other: </label>
+                                    <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>Is there anything else you need aside from the assistance provided?</th>
+                                <th>
+                                    <label for="yes"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)">Yes</label>
+                                    <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">No</label>
+                                    <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)" style="margin-left: 10%;">Other: </label>
+                                    <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                </th>
+                            </tr>
+                        </table>
+
+                    </fieldset><br>
+
+                    <!-- Div for 'Submit' & 'Reset' Buttons -->
+                    <div class="submit-reset-container">
+                        <div class="center">
+                            <button type="submit" id="submit" value="Submit" class="btn">Submit</button>
+                            <button type="reset" id="reset" value="Reset" class="btn">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                // Event handles for Application Form
+                function showhideAppForm() {
+                var x = document.getElementById("appformFieldset");
+                if(x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                }
+
+                // Event handler for checkbox lists
+                function onlyOneCheckbox(checkbox) {
+                var checkboxes = document.getElementsByName('check');
+                checkboxes.forEach((item) => {
+                    if(item !== checkbox) item.checked = false;
+                })
+                }
+            </script>
 
         </main>
+
+        <footer>
+            <div>
+                <p>&copy; Copyright 2023. All Rights Reserved.</p>
+                <p>Webpage Created by: Cameron Chambers</p>
+    
+                <!-- Social Media Icons -->
+                <a href="https://facebook.com" class="fa fa-facebook"></a>
+                <a href="https://twitter.com" class="fa fa-twitter"></a>
+            </div>
+        </footer>
 
     </body>
 </html>
