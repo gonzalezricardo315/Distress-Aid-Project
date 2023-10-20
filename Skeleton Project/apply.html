@@ -20,6 +20,9 @@
                 margin: 0;
                 padding: 0;
                 background-color: #f4f4f4;
+                background-image: url('images/blueHelping.jpg');
+                background-size: cover; 
+                background-attachment: fixed; 
             }
 
             hr.nicer-hr {
@@ -130,7 +133,7 @@
                 text-align: center;
                 font-size: 20px;
                 padding: 0.5%;
-                padding-bottom: 1%;
+                color: white;
             }
 
             .sub {
@@ -266,7 +269,7 @@
             }
 
             form {
-                background-color: lightgrey;
+                background-color: rgba(211, 211, 211, 0.838);
                 padding: 16px 16px;
             }
 
@@ -327,6 +330,14 @@
                 margin: 0 auto;
                 width: 15%;
             }
+
+            .basic-apply-info{
+                padding: 2.5%;
+                margin: 0 auto;
+                /* background-color: #33333382; */
+                color: white;
+                font-size: 100%;
+            }
         </style>
     </head>
 
@@ -355,6 +366,36 @@
 
             <div>
                 <p class="lead">If you are looking to apply for assistance, please review the information below.</p>
+            </div>
+
+            <div class="basic-apply-info">
+                <p>For the following application form, we will need various pieces of information about you. Some of this information includes:</p>
+                <ol>
+                    <li>Personal Information:</li>
+                    <ul>
+                        <li>Name, First & Last</li>
+                        <li>Date of Birth</li>
+                        <li>Email Address</li>
+                        <li>Phone Number</li>
+                        <li>Home Address</li>
+                        <li>Type of Assistance Needed</li>
+                    </ul>
+                    <li>Emergency Contact Information:</li>
+                    <ul>
+                        <li>At least two emergency contacts</li>
+                    </ul>
+                    <li>Open Ended Questions Information:</li>
+                    <ul>
+                        <li>Passions</li>
+                        <li>Skills</li>
+                        <li>Education</li>
+                        <li>Income Information</li>
+                    </ul>
+                    <li>Yes/No Questions Information:</li>
+                    <ul>
+                        <li>Various Yes/No questions, regarding whether you've previously utilized assistance or not, if you've utilized external resources, etc.</li>
+                    </ul>
+                </ol>
             </div>
 
             <!-- Div for 'Apply Now' Form -->
