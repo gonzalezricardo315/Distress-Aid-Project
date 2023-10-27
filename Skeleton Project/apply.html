@@ -400,7 +400,7 @@
 
             <!-- Div for 'Apply Now' Form -->
             <div id="form">
-                <form class="form-grid">
+                <form class="form-grid" action="link.php" method="post">
                     <!-- Button to Show/Hide Application Form -->
                     <input type="button" onclick="showhideAppForm()" value="Show/Hide Application Form">
                     <!-- Fieldset for Application Form -->
@@ -431,12 +431,16 @@
                                 <th>Assistance Needed: </th>
                                 <th>
                                     <select id="assistance_needed" name="assistance_needed" style="width: 98%;" required>
-                                        <option value="financial">Financial</option>
-                                        <option value="resource">Resource</option>
-                                        <option value="coaching">Coaching</option>
-                                        <option value="educational">Educational</option>
-                                        <option value="encouragement">Encouragement</option>
-                                        <option value="other">Other</option>
+                                        <option value="financial" name="financial">Financial</option>
+                                        <option value="grief" name="grief">Grief and Loss</option>
+                                        <option value="harassment" name="harassment">Harassment</option>
+                                        <option value="legal" name="legal">Legal</option>
+                                        <option value="mental" name="mental">Mental Health</option>
+                                        <option value="natural" name="natural">Natural Disaster</option>
+                                        <option value="physical" name="physical">Physical Health</option>
+                                        <option value="relationship" name="relationship">Relationship</option>
+                                        <option value="substance" name="substance">Substance Abuse</option>
+                                        <option value="war" name="war">War Disaster</option>
                                     </select>
                                 </th>
                             </tr>
@@ -453,9 +457,9 @@
                             </tr>
                             <tr>
                                 <th>Primary</th>
-                                <th><input type="text" id="primary-name" name="primary-name" placeholder="i.e. John Doe" required></th>
+                                <th><input type="text" id="primary_name" name="primary_name" placeholder="i.e. John Doe" required></th>
                                 <th>
-                                    <select id="primary-relationship" name="primary-relationship" required>
+                                    <select id="primary_relationship" name="primary_relationship" required>
                                         <option value="mom">Mother</option>
                                         <option value="dad">Father</option>
                                         <option value="bro">Brother</option>
@@ -468,11 +472,11 @@
                                         <option value="other">Other</option>
                                     </select>
                                 </th>
-                                <th><input type="tel" id="primary-number" name="primary-number" maxlength="13" placeholder="i.e. (555)555-5555" required></th>
+                                <th><input type="tel" id="primary_number" name="primary_number" maxlength="13" placeholder="i.e. (555)555-5555" required></th>
                             </tr>
                             <tr>
                                 <th>Secondary</th>
-                                <th><input type="text" id="secondary-name" name="secondary-name" placeholder="i.e. Jane Doe" required></th>
+                                <th><input type="text" id="secondary_name" name="secondary_name" placeholder="i.e. Jane Doe" required></th>
                                 <th>
                                     <select id="secondary-relationship" name="secondary-relationship" required>
                                         <option value="mom">Mother</option>
@@ -487,7 +491,7 @@
                                         <option value="other">Other</option>
                                     </select>
                                 </th>
-                                <th><input type="tel" id="secondary-number" name="secondary-number" maxlength="13" placeholder="i.e. (555)555-5555" required></th>
+                                <th><input type="tel" id="secondary_number" name="secondary_number" maxlength="13" placeholder="i.e. (555)555-5555" required></th>
                             </tr>
                         </table><br>
 
