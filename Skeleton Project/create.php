@@ -10,7 +10,7 @@
         $stmt = $conn->prepare("insert into registration(username, password) values(?, ?)");
         $stmt->bind_param("ss", $username, $password);
         $stmt->execute();
-        echo "registration Successfully...";
+        echo "Account Created successfully! <a href='home.html'>Home Page</a>";
         $stmt->close();
         $conn->close();
     }

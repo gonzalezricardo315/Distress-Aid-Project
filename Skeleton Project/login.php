@@ -14,12 +14,12 @@
         if($stmt_result->num_rows > 0) {
             $data = $stmt_result->fetch_assoc();
             if($data['password'] === $password){
-                echo "<h2>Login Successfully</h2>";
+                echo "Login successful! <a href='home.html'>Home Page</a>";
             }
-        } else {
-            echo "<h2>Invalid Email or password</h2>";
-        }
-        echo "registration Successfully...";
+            else{
+                echo "<h2>Invalid Email or password</h2>";
+            }
+        } 
         $stmt->close();
         $conn->close();
     }
