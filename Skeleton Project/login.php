@@ -14,10 +14,12 @@
         if($stmt_result->num_rows > 0) {
             $data = $stmt_result->fetch_assoc();
             if($data['password'] === $password){
-                echo "Login successful! <a href='home.html'>Home Page</a>";
+                header('Location: home.html');
+                exit;
             }
             else{
-                echo "<h2>Invalid Email or password</h2>";
+                header('Location: ' . $_SERVER['HTTP_REFERER'] . '?error=Invalid Email or password');
+                exit;
             }
         } 
         $stmt->close();
