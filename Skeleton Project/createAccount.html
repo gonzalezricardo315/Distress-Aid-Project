@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +22,8 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-        
-        
+
+
             background-image: url('images/background.jpeg');
             background-color: #cccccc;
             background-repeat: no-repeat;
@@ -66,7 +67,7 @@
             position: absolute;
             background-color: #000000;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
@@ -86,7 +87,7 @@
             display: block;
         }
 
-        
+
         form {
             text-align: center;
             margin: 20px auto;
@@ -126,40 +127,19 @@
         button[type="submit"]:hover {
             background-color: #ddd;
         }
-
-
     </style>
 
+    <link rel="stylesheet" href="navbar_styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Search Database</h1>
-    </header>
 
-    <ul class="tab-list">
-        <li class="dropdown">
-            <a href="javascript:void(0)">Services</a>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="aboutUs.html">About Us</a>
-                <a href="Services.html">Information Page</a>
-                <a href="external.html">External Services</a>
-                <a href="apply.html">Apply</a>
-                <a href="donations.html">Donations</a>
-            </div>
-        </li>
-    </ul>
-    <br><br>
-
-
-    <div class="container">
-        <form action="create.php" method="post">
-            <label for="login">Create account:</label>
-            <input type="text" id="username" name="username" placeholder="username">
-            <input type="text" id="password" name="password" placeholder="password">
-            <button type="submit">Submit</button>
-        </form>
-    </div>    
+    <form action="create.php" method="post">
+        <label for="login">Create account:</label>
+        <input type="text" id="username" name="username" placeholder="username">
+        <input type="text" id="password" name="password" placeholder="password">
+        <button type="submit">Submit</button>
+    </form>
 
 </body>
 </html>
