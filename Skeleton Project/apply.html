@@ -597,11 +597,11 @@
                         <tr>
                             <th style="width: 45%;">Are you in need immediate assistance?</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check"
-                                        onclick="onlyOneCheckbox(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="yes"><input type="checkbox" name="check1"
+                                        onclick="onlyOneCheckbox1(this)">Yes</label>
+                                <label for="no"><input type="checkbox" name="check1" onclick="onlyOneCheckbox1(this)"
                                         style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="other"><input type="checkbox" name="check1" onclick="onlyOneCheckbox1(this)"
                                         style="margin-left: 10%;">Other: </label>
                                 <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
                             </th>
@@ -609,11 +609,11 @@
                         <tr>
                             <th>Have you applied for assistance before?</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check"
-                                        onclick="onlyOneCheckbox(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="yes"><input type="checkbox" name="check2"
+                                        onclick="onlyOneCheckbox2(this)">Yes</label>
+                                <label for="no"><input type="checkbox" name="check2" onclick="onlyOneCheckbox2(this)"
                                         style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="other"><input type="checkbox" name="check2" onclick="onlyOneCheckbox2(this)"
                                         style="margin-left: 10%;">Other: </label>
                                 <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
                             </th>
@@ -621,11 +621,11 @@
                         <tr>
                             <th>Is the type of assistance needed offered?</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check"
-                                        onclick="onlyOneCheckbox(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="yes"><input type="checkbox" name="check3"
+                                        onclick="onlyOneCheckbox3(this)">Yes</label>
+                                <label for="no"><input type="checkbox" name="check3" onclick="onlyOneCheckbox3(this)"
                                         style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="other"><input type="checkbox" name="check3" onclick="onlyOneCheckbox3(this)"
                                         style="margin-left: 10%;">Other: </label>
                                 <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
                             </th>
@@ -633,11 +633,11 @@
                         <tr>
                             <th>Have you checked our 'Extras' page for external resources?</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check"
-                                        onclick="onlyOneCheckbox(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="yes"><input type="checkbox" name="check4"
+                                        onclick="onlyOneCheckbox4(this)">Yes</label>
+                                <label for="no"><input type="checkbox" name="check4" onclick="onlyOneCheckbox4(this)"
                                         style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="other"><input type="checkbox" name="check4" onclick="onlyOneCheckbox4(this)"
                                         style="margin-left: 10%;">Other: </label>
                                 <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
                             </th>
@@ -645,11 +645,11 @@
                         <tr>
                             <th>Is there anything else you need aside from the assistance provided?</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check"
-                                        onclick="onlyOneCheckbox(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="yes"><input type="checkbox" name="check5"
+                                        onclick="onlyOneCheckbox5(this)">Yes</label>
+                                <label for="no"><input type="checkbox" name="check5" onclick="onlyOneCheckbox5(this)"
                                         style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check" onclick="onlyOneCheckbox(this)"
+                                <label for="other"><input type="checkbox" name="check5" onclick="onlyOneCheckbox5(this)"
                                         style="margin-left: 10%;">Other: </label>
                                 <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
                             </th>
@@ -682,8 +682,36 @@
             }
 
             // Event handler for checkbox lists
-            function onlyOneCheckbox(checkbox) {
-                var checkboxes = document.getElementsByName('check');
+            function onlyOneCheckbox1(checkbox) {
+                var checkboxes = document.getElementsByName('check1');
+                checkboxes.forEach((item) => {
+                    if (item !== checkbox) item.checked = false;
+                })
+            }
+
+            function onlyOneCheckbox2(checkbox) {
+                var checkboxes = document.getElementsByName('check2');
+                checkboxes.forEach((item) => {
+                    if (item !== checkbox) item.checked = false;
+                })
+            }
+
+            function onlyOneCheckbox3(checkbox) {
+                var checkboxes = document.getElementsByName('check3');
+                checkboxes.forEach((item) => {
+                    if (item !== checkbox) item.checked = false;
+                })
+            }
+
+            function onlyOneCheckbox4(checkbox) {
+                var checkboxes = document.getElementsByName('check4');
+                checkboxes.forEach((item) => {
+                    if (item !== checkbox) item.checked = false;
+                })
+            }
+
+            function onlyOneCheckbox5(checkbox) {
+                var checkboxes = document.getElementsByName('check5');
                 checkboxes.forEach((item) => {
                     if (item !== checkbox) item.checked = false;
                 })
