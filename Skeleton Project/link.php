@@ -20,7 +20,7 @@
         $stmt = $conn->prepare("insert into apply(first_name, last_name, dob, email, phone_number, address, assistance_needed, primary_name, primary_number, secondary_name, secondary_number) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("sssssssssss", $first_name, $last_name, $dob, $email, $phone_number, $address, $assistance_needed, $primary_name, $primary_number, $secondary_name, $secondary_number);
         $stmt->execute();
-        echo "registration Successfully...";
+        header('Location: apply.html');
         $stmt->close();
         $conn->close();
     }
