@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>External Resources for Stress Relief</title>
     <style>
         header {
@@ -160,19 +164,18 @@
 
 <body>
 
-    <header>
-        <h1>External Resources for Stress Release</h1>
-    </header>
-
     <!-- Normal Nav Menu (for Tablet/Dekstop) -->
     <nav class="navbar navbar-expand-sm bg-dark">
         <div class="container-fluid text-secondary">
-            <a class="navbar-brand" href="index.html"><img src="images/teamSix.png" class="rounder" alt="DD Logo"
+            <header>
+                <h1 style="display: inline;">External Resources for Stress Relief</h1>
+            </header>
+            <a class="navbar-brand" href="home.html"><img src="images/teamSix.png" class="rounder" alt="DD Logo"
                     width="150" height="150"></a>
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="searchDatabase.html">Seach Database</a>
@@ -181,7 +184,7 @@
                     <a class="nav-link" href="apply.html">Apply</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Services.html">Information Page</a>
+                    <a class="nav-link" href="Services.html">Service Information</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="aboutUs.html">About Us</a>
@@ -189,88 +192,92 @@
                 <li class="nav-item">
                     <a class="nav-link" href="external.html">External Services</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="donations.html">Donations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="createAccount.html">Create Account</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hamburger Nav Menu (for Mobile) -->
     <div class="topnav d-sm-block d-md-none mobile">
-        <a href="index.html" class="active"><img src="images/teamSix.png" class="rounded" alt="DD Logo" width="75"
+        <a href="home.html" class="active"><img src="images/teamSix.png" class="rounded" alt="DD Logo" width="75"
                 height="75"></a>
         <div id="myLinks">
-            <a href="index.html" class="active">Home</a>
+            <a href="home.html" class="active">Home</a>
             <a href="searchDatabase.html">Seach Database</a>
             <a href="apply.html">Apply</a>
-            <a href="Services.html">Information Page</a>
+            <a href="Services.html">Service Information</a>
             <a href="aboutUs.html">About Us</a>
             <a href="external.html">External Services</a>
-            <a href="donations.html">Donations</a>
-            <a href="createAccount.html">Create Account</a>
-            <a href="login.html">Login</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="navbar()"><i class="fa fa-bars"></i></a>
     </div>
 
-<main>
-    <div class="container">
-        <h2>List of Resources:</h2>
-        <p>Here, you can find a list of external resources dedicated to helping with stress relief. Whether you prefer
-            meditation, physical activity, or educational content, there's something here for everyone.</p>
+    <main>
+        <div class="container">
+            <h2>List of Resources:</h2>
+            <p>Here, you can find a list of external resources dedicated to helping with stress relief. Whether you
+                prefer
+                meditation, physical activity, or educational content, there's something here for everyone.</p>
 
-        <section class="resource">
-            <img src="images\Meditation-Techniques.jpg" alt="Meditation" width="800" height="350">
-            <h2>Meditation Techniques</h2>
-            <ul>
-                <li><a href="https://www.headspace.com/">Headspace</a></li>
-                <li><a href="https://insighttimer.com/">Insight Timer</a></li>
-                <li><a href="https://www.calm.com/">Calm</a></li>
-            </ul>
-        </section>
+            <section class="resource">
+                <img src="images\Meditation-Techniques.jpg" alt="Meditation" width="800" height="350">
+                <h2>Meditation Techniques</h2>
+                <ul>
+                    <li><a href="https://www.headspace.com/">Headspace</a></li>
+                    <li><a href="https://insighttimer.com/">Insight Timer</a></li>
+                    <li><a href="https://www.calm.com/">Calm</a></li>
+                </ul>
+            </section>
 
-        <section class="resource">
-            <img src="images\beach-yoga1.jpg" alt="Yoga" alt="Meditation" width="800" height="350">
-            <h2>Yoga for Stress Relief</h2>
-            <ul>
-                <li><a href="https://www.doyogawithme.com/">DoYogaWithMe</a></li>
-            </ul>
-        </section>
+            <section class="resource">
+                <img src="images\beach-yoga1.jpg" alt="Yoga" alt="Meditation" width="800" height="350">
+                <h2>Yoga for Stress Relief</h2>
+                <ul>
+                    <li><a href="https://www.doyogawithme.com/">DoYogaWithMe</a></li>
+                </ul>
+            </section>
 
-        <section class="resource">
-            <img src="images\Articles.jpg" alt="Educational Article" alt="Meditation" width="800" height="350">
-            <h2>Educational Articles about Stress</h2>
-            <ul>
-                <li><a href="https://www.helpguide.org/articles/stress/stress-symptoms-signs-and-causes.htm">HelpGuide -
-                        Stress Symptoms, Signs, and Causes</a></li>
-                <li><a
-                        href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/basics/stress-basics/hlv-20049495">Mayo
-                        Clinic - Stress Management</a></li>
-                <li><a href="https://www.verywellmind.com/stress-and-the-body-3145086">Verywell Mind</a></li>
-            </ul>
-        </section>
+            <section class="resource">
+                <img src="images\Articles.jpg" alt="Educational Article" alt="Meditation" width="800" height="350">
+                <h2>Educational Articles about Stress</h2>
+                <ul>
+                    <li><a href="https://www.helpguide.org/articles/stress/stress-symptoms-signs-and-causes.htm">HelpGuide
+                            -
+                            Stress Symptoms, Signs, and Causes</a></li>
+                    <li><a
+                            href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/basics/stress-basics/hlv-20049495">Mayo
+                            Clinic - Stress Management</a></li>
+                    <li><a href="https://www.verywellmind.com/stress-and-the-body-3145086">Verywell Mind</a></li>
+                </ul>
+            </section>
 
-        <section class="resource">
-            <img src="images\relax.avif" alt="Relaxation Exercise" alt="Meditation" width="800" height="350">
-            <h2>Guided Relaxation Exercises</h2>
-            <ul>
-                <li><a href="http://marc.ucla.edu/mindful-meditations">UCLA Health - Free Guided Meditations</a></li>
-                <li><a href="https://www.verywellmind.com/how-do-i-practice-progressive-muscle-relaxation-3024400">Progressive
-                        Muscle Relaxation Exercises</a></li>
-            </ul>
-        </section>
-    </div>
+            <section class="resource">
+                <img src="images\relax.avif" alt="Relaxation Exercise" alt="Meditation" width="800" height="350">
+                <h2>Guided Relaxation Exercises</h2>
+                <ul>
+                    <li><a href="http://marc.ucla.edu/mindful-meditations">UCLA Health - Free Guided Meditations</a>
+                    </li>
+                    <li><a href="https://www.verywellmind.com/how-do-i-practice-progressive-muscle-relaxation-3024400">Progressive
+                            Muscle Relaxation Exercises</a></li>
+                </ul>
+            </section>
+        </div>
 
-    <script src="navbar.js"></script>
+        <script src="navbar.js"></script>
 
-</main>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; Copyright 2023. All Rights Reserved.</p>
+
+            <!-- Link to Donations page -->
+            <a class="footer-link" href="donations.html">Donations</a>
+
+            <!-- Social Media Icons -->
+            <a href="https://facebook.com" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+        </div>
+    </footer>
 
 </body>
 

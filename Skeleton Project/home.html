@@ -209,21 +209,21 @@
         }
 
         .home-info {
-            background-color: #333;
+            background-color: #55aceebd;
             padding: 1%;
         }
 
         .home-info-head {
             padding-top: 30px;
             font-size: 185%;
-            color: white;
+            color: black;
         }
 
         .home-info-sub-head {
             font-size: 175%;
             padding-bottom: 0%;
             font-weight: bold;
-            color: white;
+            color: black;
         }
 
         .home-info-pic {
@@ -244,7 +244,7 @@
             font-size: 20px;
             padding: 0.5%;
             padding-bottom: 1%;
-            color: white;
+            color: black;
         }
 
         .sub {
@@ -252,7 +252,7 @@
             font-size: 115%;
             padding: 0.5%;
             padding-bottom: 2%;
-            color: white;
+            color: black;
         }
 
         .main-head {
@@ -269,11 +269,15 @@
     <!-- Normal Nav Menu (for Tablet/Dekstop) -->
     <nav class="navbar navbar-expand-sm bg-dark">
         <div class="container-fluid text-secondary">
-            <a class="navbar-brand" href="index.html"><img src="images/teamSix.png" class="rounder" alt="DD Logo" width="150" height="150"></a>
+            <header>
+                <h1 style="display: inline;">Disintegrate Distress</h1>
+            </header>
+            <a class="navbar-brand" href="home.html"><img src="images/teamSix.png" class="rounder" alt="DD Logo"
+                    width="150" height="150"></a>
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="searchDatabase.html">Seach Database</a>
@@ -282,7 +286,7 @@
                     <a class="nav-link" href="apply.html">Apply</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Services.html">Information Page</a>
+                    <a class="nav-link" href="Services.html">Service Information</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="aboutUs.html">About Us</a>
@@ -290,33 +294,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="external.html">External Services</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="donations.html">Donations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="createAccount.html">Create Account</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Hamburger Nav Menu (for Mobile) -->
     <div class="topnav d-sm-block d-md-none mobile">
-        <a href="index.html" class="active"><img src="images/teamSix.png" class="rounded" alt="DD Logo" width="75"
+        <a href="home.html" class="active"><img src="images/teamSix.png" class="rounded" alt="DD Logo" width="75"
                 height="75"></a>
         <div id="myLinks">
-            <a href="index.html" class="active">Home</a>
+            <a href="home.html" class="active">Home</a>
             <a href="searchDatabase.html">Seach Database</a>
             <a href="apply.html">Apply</a>
-            <a href="Services.html">Information Page</a>
+            <a href="Services.html">Service Information</a>
             <a href="aboutUs.html">About Us</a>
             <a href="external.html">External Services</a>
-            <a href="donations.html">Donations</a>
-            <a href="createAccount.html">Create Account</a>
-            <a href="login.html">Login</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="navbar()"><i class="fa fa-bars"></i></a>
     </div>
@@ -325,6 +317,7 @@
 
         <div>
             <h1 class="main-head">Welcome to Disintegrate Distress!</h1>
+            <p class="lead">We aim to help individuals experiencing distress in any way that we can.</p>
         </div>
 
         <!-- Company Information for Home Screen -->
@@ -381,7 +374,9 @@
     <footer>
         <div>
             <p>&copy; Copyright 2023. All Rights Reserved.</p>
-            <p>Webpage Created by: Cameron Chambers</p>
+
+            <!-- Link to Donations page -->
+            <a class="footer-link" href="donations.html">Donations</a>
 
             <!-- Social Media Icons -->
             <a href="https://facebook.com" class="fa fa-facebook"></a>
