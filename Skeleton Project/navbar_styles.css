@@ -82,7 +82,7 @@ print {
     }
 }
 
-ul {
+.navbar-nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -92,13 +92,13 @@ ul {
     top: 0;
 }
 
-li {
+.nav-item {
     display: inline;
     float: left;
     list-style-type: disc;
 }
 
-li a {
+.nav-item a {
     display: block;
     color: white;
     text-align: center;
@@ -108,7 +108,7 @@ li a {
     transition: 0.25s;
 }
 
-li a:hover {
+.nav-item a:hover {
     background-color: #333;
 }
 
