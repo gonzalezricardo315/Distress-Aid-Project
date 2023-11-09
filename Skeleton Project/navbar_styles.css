@@ -1,4 +1,35 @@
-/* Styles for navbar and footer elements */
+/* Styles for navbar, footer, and header elements */
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 0px;
+}
+
+header img {
+    margin-right: 0px; /* Adjust spacing as needed */
+    width: 150px; /* Your logo width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0; /* Removes default margin from the h1 tag */
+    margin-right: auto; /* Pushes the h1 a bit to the left */
+    margin-left: -175px;
+}
+
+/* Adjust this padding to move the text more to the left */
+header .header-spacer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 5%; /* This effectively acts as 'empty' space */
+}
 
 /* Footer styles */
 footer {
