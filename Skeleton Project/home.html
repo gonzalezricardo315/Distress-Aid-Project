@@ -28,6 +28,10 @@
             background-color: #f4f4f4;
         }
 
+        main {
+            background-color: #55aceebd;
+        }
+
         h1,
         h2,
         h3 {
@@ -210,7 +214,7 @@
         }
 
         .home-info {
-            background-color: #55aceebd;
+            /* background-color: #55aceebd; */
             padding: 1%;
         }
 
@@ -232,8 +236,8 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 128px;
-            height: 128px;
+            width: 132px;
+            height: 132px;
             border-radius: 50%;
         }
 
@@ -261,6 +265,120 @@
             padding: 0%;
             font-weight: bold;
         }
+
+        /* Styles for slideshow */
+        * {
+            box-sizing: border-box;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 16px;
+            padding: 12px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .slideshow-head {
+            font-size: 150%;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            /* display: block; */
+        }
+
+        .slideshow-head:hover {
+            text-decoration: underline;
+        }
     </style>
 
     <link rel="stylesheet" href="navbar_styles.css">
@@ -272,7 +390,8 @@
     <nav class="navbar navbar-expand-sm bg-dark">
         <div class="container-fluid text-secondary">
             <header>
-                <a href="home.html"><img src="images/teamSix.png" class="rounder" alt="DD Logo" width="150" height="150"></a>
+                <a href="home.html"><img src="images/teamSix.png" class="rounder" alt="DD Logo" width="150"
+                        height="150"></a>
                 <h1 style="display: inline;">Disintegrate Distress</h1>
             </header>
 
@@ -301,10 +420,9 @@
 
     <!-- Hamburger Nav Menu (for Mobile) -->
     <div class="topnav d-sm-block d-md-none mobile">
-        <a href="home.html" class="active"><img src="images/teamSix.png" class="rounded" alt="DD Logo" width="75"
-                height="75"></a>
+        <a href="home.html"><img src="images/teamSix.png" class="rounded" alt="DD Logo" width="75" height="75"></a>
         <div id="myLinks">
-            <a href="home.html" class="active">Home</a>
+            <a href="home.html">Home</a>
             <a href="searchDatabase.html">Seach Database</a>
             <a href="apply.html">Apply</a>
             <a href="Services.html">Service Information</a>
@@ -347,7 +465,7 @@
                     <p class="sub">We are only as succesful as those we help; read about what we've done for others.</p>
                 </article>
 
-                <article class="home-info-article" style="padding-bottom: 3%;">
+                <article class="home-info-article" style="padding-bottom: 7.5%;">
                     <a href="apply.html" class="home-info-pic-link">
                         <img src="images/applynow2.jpg" alt="distress2" class="home-info-pic">
                     </a>
@@ -357,6 +475,119 @@
             </div>
         </div>
 
+        <!-- Slideshow of images to show team -->
+        <!-- Need to work on resizing images so they all fit a bit better -->
+        <div class="slideshow-container">
+
+            <!-- Slideshow heading -->
+            <a class="slideshow-head" href="aboutUs.html">Our Team</a>
+
+            <!-- Team picture of Team 6 -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 8</div>
+                <img src="images/slideshow-images/Team6.jpg" style="width: 100%;">
+                <div class="text">Meet the Members!</div>
+            </div>
+
+            <!-- Picture of Cameron -->
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 8</div>
+                <img src="images/slideshow-images/cam.JPG" style="width: 100%;">
+                <div class="text">Cameron creating code for our beautiful home page!</div>
+            </div>
+
+            <!-- Picture of Ricky -->
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <img src="images/slideshow-images/ricky.JPG" style="width: 100%;">
+                <div class="text">Ricky rigorously reaches victory in back-end development!</div>
+            </div>
+
+            <!-- Picture of Cedric -->
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="images/slideshow-images/ced.JPG" style="width: 100%;">
+                <div class="text">Cedric seemlessly sustains thorough results!</div>
+            </div>
+
+            <!-- Picture of Danny -->
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="images/slideshow-images/danny.JPG" style="width: 100%;">
+                <div class="text">Danny dives deep into developing the search engine!</div>
+            </div>
+
+            <!-- Picture of Kris -->
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <img src="images/slideshow-images/kris.JPG" style="width: 100%;">
+                <div class="text">Kris cultivates cures to distressed individuals!</div>
+            </div>
+
+            <!-- Picture of Zuhdi -->
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="images/slideshow-images/pictureforzuhdi.jpg" style="width: 100%;">
+                <div class="text">Zuhdi zips up files for data transferring!</div>
+            </div>
+
+            <!-- Picture of Team 6 hard at work -->
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="images/slideshow-images/IMG_1146.jpg" style="width: 100%;">
+                <div class="text">Is Team 6 working hard, or hardly working?</div>
+            </div>
+
+            <div id="prev" class="prev" onclick="plusSlides(-1)">❮</div>
+            <div id="prev" class="next" onclick="plusSlides(1)">❯</div>
+
+        </div>
+        <br>
+
+        <!-- Dots to show what image of slideshow you are on -->
+        <div style="text-align: center; padding-bottom: 2%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+
+        <!-- Script for slideshow -->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length };
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                // setTimeout(showSlides, 5000); // Change image every 5 seconds [Need to Fix]
+            }
+        </script>
+
+        <!-- Navbar script -->
         <script src="navbar.js"></script>
 
     </main>
@@ -369,8 +600,8 @@
             <a class="footer-link" href="donations.html">Donations</a>
 
             <!-- Social Media Icons -->
-            <a href="https://facebook.com" class="fa fa-facebook"></a>
-            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://facebook.com" class="fa fa-facebook" style="box-sizing: unset;"></a>
+            <a href="https://twitter.com" class="fa fa-twitter" style="box-sizing: unset;"></a>
         </div>
     </footer>
 
