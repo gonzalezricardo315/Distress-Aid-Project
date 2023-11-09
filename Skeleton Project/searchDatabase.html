@@ -185,10 +185,9 @@
 
     <main>
         <div class="container">
-            <form>
-                <label for="search">Search:</label>
-                <input type="text" id="search" name="search" placeholder="What service are you looking for">
-                <button type="submit">Search</button>
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" id="search" name="q" placeholder="What service are you looking for" required>
+                <input type="submit" value="Search">
             </form>
         </div>
 
