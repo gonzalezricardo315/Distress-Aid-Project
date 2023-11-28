@@ -8,6 +8,18 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Link Basic Styles -->
+    <link rel="stylesheet" href="navbar_styles.css">
+    <!-- Link Script for Website Logo + Footer -->
+    <script src="script/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/aa1ecd88e1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Links for Footer design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
     <title>Donate Now!</title>
     <style>
         header {
@@ -15,6 +27,7 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            padding-top: 3em;
         }
 
         body {
@@ -31,31 +44,6 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
-        }
-
-        ul.tab-list {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        ul.tab-list li {
-            float: center;
-        }
-
-        ul.tab-list li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul.tab-list li a:hover {
-            background-color: #ddd;
-            color: black;
         }
 
         .dropdown-content {
@@ -88,50 +76,46 @@
 </head>
 
 <body>
-    <!-- Normal Nav Menu (for Tablet/Dekstop) -->
-    <nav class="navbar navbar-expand-sm bg-dark">
-        <div class="container-fluid text-secondary">
-            <header>
-                <a href="home.html"><img src="images/teamSix.png" class="rounder" alt="DD Logo" width="150" height="150"></a>    
-                <h1 style="display: inline;">Donations</h1>
-            </header>
+    <!-- Navbars for Website -->
+    <!-- Desktop/Tablet Nav --> 
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+                <!-- Logo Placeholder for Inlustration -->
+                <a class="nav-logo" href="home.html"><i class="fa-solid fa-person-rays"></i> CYDC</a>
+            </div>
 
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="searchDatabase.html">Seach Database</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="apply.html">Apply</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Services.html">Service Information</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutUs.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="external.html">External Services</a>
-                </li>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="searchDatabase.html">Search Database</a></li>
+                <li><a href="external.html">Extras</a></li>
+                <li><a href="donations.html">Donations</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hamburger Nav Menu (for Mobile) -->
-    <div class="topnav d-sm-block d-md-none mobile">
-        <a href="home.html" class="active"><img src="images/teamSix.png" class="rounded" alt="DD Logo" width="75"
-                height="75"></a>
-        <div id="myLinks">
-            <a href="home.html" class="active">Home</a>
-            <a href="searchDatabase.html">Seach Database</a>
-            <a href="apply.html">Apply</a>
-            <a href="Services.html">Service Information</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="external.html">External Services</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="navbar()"><i class="fa fa-bars"></i></a>
+    <!-- Menu Icon for Mobile Nav -->
+    <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+    </div>
+
+    <!-- Menu for Mobile Nav -->
+    <div class="overlay-menu">
+        <ul id="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="searchDatabase.html">Search Database</a></li>
+            <li><a href="external.html">Extras</a></li>
+            <li><a href="donations.html">Donations</a></li>
+        </ul>
     </div>
 
     <main>
@@ -144,18 +128,27 @@
         </div>
     </main>
 
-    <footer>
-        <div>
-            <p>&copy; Copyright 2023. All Rights Reserved.</p>
-
-            <!-- Link to Donations page -->
-            <a class="footer-link" href="donations.html">Donations</a>
-
-            <!-- Social Media Icons -->
-            <a href="https://facebook.com" class="fa fa-facebook"></a>
-            <a href="https://twitter.com" class="fa fa-twitter"></a>
-        </div>
-    </footer>
+    <!-- Footer Element -->
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html">Home</a></li>
+                <li class="list-inline-item"><a href="Services.html">Services</a></li>
+                <li class="list-inline-item"><a href="aboutUs.html">About</a></li>
+                <li class="list-inline-item"><a href="apply.html">Apply</a></li>
+                <li class="list-inline-item"><a href="searchDatabase.html">Search Database</a></li>
+                <li class="list-inline-item"><a href="external.html">Extras</a></li>
+                <li class="list-inline-item"><a href="donations.html">Donations</a></li>
+            </ul>
+            <p class="copyright">Disintegrate Distress © 2023</p>
+        </footer>
+    </div>
 
 </body>
 
