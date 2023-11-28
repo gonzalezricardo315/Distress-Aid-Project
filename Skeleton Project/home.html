@@ -127,15 +127,13 @@
         }
 
         .home-info-head {
-            padding-top: 30px;
+            padding-top: 12px;
             font-size: 185%;
             color: black;
         }
 
         .home-info-sub-head {
             font-size: 175%;
-            padding-bottom: 0%;
-            padding-top: 0%;
             font-weight: bold;
             color: black;
         }
@@ -144,6 +142,8 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 12px;
+            margin-bottom: 24px;
             width: 132px;
             height: 132px;
             border-radius: 50%;
@@ -239,7 +239,9 @@
         }
 
         .row {
-            padding-bottom: 7.5%;
+            padding-bottom: 10%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .row:after {
@@ -268,6 +270,12 @@
             .prev,
             .next {
                 font-size: 11px
+            }
+        }
+
+        @media(max-width: 640px) {
+            .grid-container {
+                grid-template-columns: auto;
             }
         }
 
@@ -302,13 +310,11 @@
 
             <!-- Navbar Links -->
             <ul id="menu">
-                <li><a href="home.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="aboutUs.html">About</a></li>
                 <li><a href="apply.html">Apply</a></li>
-                <li><a href="searchDatabase.html">Search Database</a></li>
+                <li><a href="searchDatabase.html">Search</a></li>
                 <li><a href="external.html">Extras</a></li>
-                <li><a href="donations.html">Donations</a></li>
             </ul>
         </div>
     </nav>
@@ -379,7 +385,7 @@
         <div class="slideshow-container">
 
             <!-- Slideshow heading -->
-            <!-- <a class="slideshow-head" href="aboutUs.html">Our Team</a> -->
+            <a class="slideshow-head" href="aboutUs.html">Our Team</a>
 
             <!-- Team picture of Team 6 -->
             <div class="mySlides">

@@ -53,7 +53,6 @@ a.nav-logo:hover {
     }
 }
 
-
 .logo {
     float: left;
     margin-left: 28px;
@@ -80,7 +79,7 @@ a.nav-logo:hover {
     -webkit-transition: transform 0.5s ease-out;
 }
 
-@media(max-width: 640px) {
+@media(max-width: 655px) {
     #navbar ul {
         display: none;
     }
@@ -157,7 +156,7 @@ a.nav-logo:hover {
 /*======================================================
                       Mobile Menu Menu Icon
     ======================================================*/
-@media(max-width: 640px) {
+@media(max-width: 655px) {
     .menuIcon {
         cursor: pointer;
         display: block;
@@ -398,7 +397,7 @@ a.nav-logo:hover {
     transition: color 0.3s ease;
 }
 
-@media(min-width: 640px) {
+@media(min-width: 655px) {
     .overlay-menu {
         display: none;
     }
