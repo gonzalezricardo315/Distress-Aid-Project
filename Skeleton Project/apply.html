@@ -168,7 +168,7 @@
         .othercheck {
             margin-left: auto;
             margin-right: auto;
-            padding: 12px 12px;
+            padding: 8px 8px;
         }
 
         input[type=checkbox] {
@@ -525,6 +525,15 @@
                                 <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
                             </th>
                         </tr>
+                        <tr>
+                            <th>TEST CHECKBOX STYLE</th>
+                            <th>
+                                <label for="yes" class="yescheck"><input type="checkbox" name="check1"
+                                    onclick="onlyOneCheckbox1(this)">Yes</label>
+                            <label for="no" class="nocheck"><input type="checkbox" name="check1"
+                                    onclick="onlyOneCheckbox1(this)" style="margin-left: 10%;">No</label>
+                        </th>
+                        </tr>
                     </table>
 
                 </fieldset><br>
@@ -595,8 +604,8 @@
     <div class="footer-basic">
         <footer>
             <div class="social">
+                <a href="#"><i class="icon ion-social-linkedin"></i></a>
                 <a href="#"><i class="icon ion-social-instagram"></i></a>
-                <a href="#"><i class="icon ion-social-snapchat"></i></a>
                 <a href="#"><i class="icon ion-social-twitter"></i></a>
                 <a href="#"><i class="icon ion-social-facebook"></i></a>
             </div>
@@ -605,11 +614,11 @@
                 <li class="list-inline-item"><a href="Services.html">Services</a></li>
                 <li class="list-inline-item"><a href="aboutUs.html">About</a></li>
                 <li class="list-inline-item"><a href="apply.html">Apply</a></li>
-                <li class="list-inline-item"><a href="searchDatabase.html">Search Database</a></li>
-                <li class="list-inline-item"><a href="external.html">Extras</a></li>
                 <li class="list-inline-item"><a href="donations.html">Donations</a></li>
+                <li class="list-inline-item"><a href="searchDatabase.html">Search</a></li>
+                <li class="list-inline-item"><a href="external.html">Extras</a></li>
             </ul>
-            <p class="copyright">Disintegrate Distress © 2023</p>
+            <a href="aboutus.html" style="padding-top: 0%;"><p class="copyright">Disintegrate Distress © 2023</p></a>
         </footer>
     </div>
 </body>
