@@ -131,7 +131,7 @@
         }
 
         #appformFieldset {
-            /* display: none; */
+            display: none;
         }
 
         .home-info-article {
@@ -460,81 +460,42 @@
                         </tr>
                     </table><br>
 
-                    <!-- Table for 'Yes/No' Questions -->
-                    <label for="appform-yesno-qs">
-                        <h3 class="appformh3">Yes/No Questions</h3>
+                    <!-- Table for 'textarea' Questions -->
+                    <label for="appform-textarea-qs">
+                        <h3 class="appformh3">Open Ended Questions</h3>
                     </label>
                     <table>
                         <tr>
-                            <th style="width: 45%;">Are you in need immediate assistance?</th>
+                            <th class="appform-textarea-qs-th">Passions</th>
                             <th>
-                                <label for="yes" class="yescheck"><input type="checkbox" name="check1"
-                                        onclick="onlyOneCheckbox1(this)">Yes</label>
-                                <label for="no" class="nocheck"><input type="checkbox" name="check1"
-                                        onclick="onlyOneCheckbox1(this)" style="margin-left: 10%;">No</label>
-                                <label for="other" class="othercheck"><input type="checkbox" name="check1"
-                                        onclick="onlyOneCheckbox1(this)" style="margin-left: 10%;">Other: </label>
-                                <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                <div class="appform-textarea-qs">
+                                    <textarea id="myText" name="passions" cols="50" rows="10"
+                                        placeholder="What are you passionate about? This helps us determine where we should offer assistance. (1,000 character limit)"
+                                        required></textarea>
+                                </div>
                             </th>
                         </tr>
                         <tr>
-                            <th>Have you applied for assistance before?</th>
+                            <th class="appform-textarea-qs-th">Skills</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check2"
-                                        onclick="onlyOneCheckbox2(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check2" onclick="onlyOneCheckbox2(this)"
-                                        style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check2" onclick="onlyOneCheckbox2(this)"
-                                        style="margin-left: 10%;">Other: </label>
-                                <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                <div class="appform-textarea-qs">
+                                    <textarea name="skills" cols="50" rows="10"
+                                        placeholder="Skills related to your dreams & passions! This helps us determine what skills you may already have. (1,000 character limit)"
+                                        required></textarea>
+                                </div>
                             </th>
                         </tr>
                         <tr>
-                            <th>Is the type of assistance needed offered?</th>
+                            <th class="appform-textarea-qs-th">Education</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check3"
-                                        onclick="onlyOneCheckbox3(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check3" onclick="onlyOneCheckbox3(this)"
-                                        style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check3" onclick="onlyOneCheckbox3(this)"
-                                        style="margin-left: 10%;">Other: </label>
-                                <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
+                                <div class="appform-textarea-qs">
+                                    <textarea name="education" cols="50" rows="10"
+                                        placeholder="Tell us about the education you have in the area(s) you're passionate about! This helps us determine how knowledgable you are about your passions/dreams. (1,000 character limit)"
+                                        required></textarea>
+                                </div>
                             </th>
                         </tr>
-                        <tr>
-                            <th>Have you checked our 'Extras' page for external resources?</th>
-                            <th>
-                                <label for="yes"><input type="checkbox" name="check4"
-                                        onclick="onlyOneCheckbox4(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check4" onclick="onlyOneCheckbox4(this)"
-                                        style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check4" onclick="onlyOneCheckbox4(this)"
-                                        style="margin-left: 10%;">Other: </label>
-                                <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Is there anything else you need aside from the assistance provided?</th>
-                            <th>
-                                <label for="yes"><input type="checkbox" name="check5"
-                                        onclick="onlyOneCheckbox5(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check5" onclick="onlyOneCheckbox5(this)"
-                                        style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check5" onclick="onlyOneCheckbox5(this)"
-                                        style="margin-left: 10%;">Other: </label>
-                                <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>TEST CHECKBOX STYLE</th>
-                            <th>
-                                <label for="yes" class="yescheck"><input type="checkbox" name="check1"
-                                    onclick="onlyOneCheckbox1(this)">Yes</label>
-                            <label for="no" class="nocheck"><input type="checkbox" name="check1"
-                                    onclick="onlyOneCheckbox1(this)" style="margin-left: 10%;">No</label>
-                        </th>
-                        </tr>
-                    </table>
+                    </table><br>
 
                 </fieldset><br>
 

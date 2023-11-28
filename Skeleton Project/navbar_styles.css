@@ -69,7 +69,7 @@ a.nav-logo:hover {
 } */
 
 #navbar ul {
-    display: inline-block;
+    /* display: inline-block; */
     float: right;
     list-style: none;
     /* margin-right: 14px; */
