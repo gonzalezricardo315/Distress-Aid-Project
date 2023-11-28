@@ -22,7 +22,6 @@
 
     <title>Apply Now</title>
     <style>
-
         body {
             font-family: 'Times New Roman', Times, serif, sans-serif;
             line-height: 1.6;
@@ -128,10 +127,11 @@
         .appformh3 {
             text-align: left;
             font-weight: bold;
+            font-size: 24px;
         }
 
         #appformFieldset {
-            display: none;
+            /* display: none; */
         }
 
         .home-info-article {
@@ -141,6 +141,8 @@
 
         .legend-h2 {
             font-weight: bold;
+            font-size: 28px;
+            padding-top: 30px;
         }
 
         .appform-personal-info {
@@ -159,6 +161,18 @@
             -webkit-transition: 0.5s;
             transition: 0.5s;
             outline: none;
+        }
+
+        .yescheck,
+        .nocheck,
+        .othercheck {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 12px 12px;
+        }
+
+        input[type=checkbox] {
+            float: left;
         }
 
         input[type=date],
@@ -194,6 +208,7 @@
             cursor: pointer;
             -webkit-transition: 0.5s;
             transition: 0.5s;
+            border-radius: 5px;
         }
 
         input[type=button]:hover {
@@ -237,18 +252,18 @@
             border: 1px solid black;
         }
 
-        form {
-            background-color: rgba(211, 211, 211, 0.566);
-            padding: 16px 16px;
+        tr {
+            grid-template-columns: auto;
         }
 
-        video {
-            display: block;
+        form {
             padding: 16px 16px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            width: 300px;
+            color: white;
+        }
+
+        #form {
+            padding-bottom: 2%;
+            background-color: rgba(211, 211, 211, 0.566);
         }
 
         figure {
@@ -271,6 +286,14 @@
             margin: 0 auto;
             width: 15%;
         }
+
+        .basic-apply-info {
+            padding: 2.5%;
+            margin: 0 auto;
+            background-color: rgba(211, 211, 211, 0.566);
+            color: white;
+            font-size: 100%;
+        }
     </style>
 
     <link rel="stylesheet" href="navbar_styles.css">
@@ -279,7 +302,7 @@
 <body>
 
     <!-- Navbars for Website -->
-    <!-- Desktop/Tablet Nav --> 
+    <!-- Desktop/Tablet Nav -->
     <nav id="navbar" class="">
         <div class="nav-wrapper">
             <!-- Navbar Logo -->
@@ -319,6 +342,12 @@
     </div>
 
     <main>
+
+        <div class="basic-apply-info">
+            <h2>Apply Now!</h2>
+            <p class="lead" style="padding-bottom: 2%;">If you are looking to apply for assistance, please review the
+                information below.</p>
+        </div>
 
         <!-- Div for 'Apply Now' Form -->
         <div id="form">
@@ -389,10 +418,10 @@
                         </tr>
                         <tr>
                             <th>Primary</th>
-                            <th><input type="text" id="primary_name" name="primary_name" placeholder="i.e. John Doe"
+                            <th><input type="text" id="primary-name" name="primary-name" placeholder="i.e. John Doe"
                                     required></th>
                             <th>
-                                <select id="primary_relationship" name="primary_relationship" required>
+                                <select id="primary-relationship" name="primary-relationship" required>
                                     <option value="mom">Mother</option>
                                     <option value="dad">Father</option>
                                     <option value="bro">Brother</option>
@@ -405,12 +434,12 @@
                                     <option value="other">Other</option>
                                 </select>
                             </th>
-                            <th><input type="tel" id="primary_number" name="primary_number" maxlength="13"
+                            <th><input type="tel" id="primary-number" name="primary-number" maxlength="13"
                                     placeholder="i.e. (555)555-5555" required></th>
                         </tr>
                         <tr>
                             <th>Secondary</th>
-                            <th><input type="text" id="secondary_name" name="secondary_name" placeholder="i.e. Jane Doe"
+                            <th><input type="text" id="secondary-name" name="secondary-name" placeholder="i.e. Jane Doe"
                                     required></th>
                             <th>
                                 <select id="secondary-relationship" name="secondary-relationship" required>
@@ -426,54 +455,8 @@
                                     <option value="other">Other</option>
                                 </select>
                             </th>
-                            <th><input type="tel" id="secondary_number" name="secondary_number" maxlength="13"
+                            <th><input type="tel" id="secondary-number" name="secondary-number" maxlength="13"
                                     placeholder="i.e. (555)555-5555" required></th>
-                        </tr>
-                    </table><br>
-
-                    <!-- Table for 'textarea' Questions -->
-                    <label for="appform-textarea-qs">
-                        <h3 class="appformh3">Open Ended Questions</h3>
-                    </label>
-                    <table>
-                        <tr>
-                            <th class="appform-textarea-qs-th">Passions</th>
-                            <th>
-                                <div class="appform-textarea-qs">
-                                    <textarea id="myText" name="passions" cols="50" rows="10"
-                                        placeholder="What are you passionate about? This helps us determine where we should offer assistance."
-                                        required></textarea>
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="appform-textarea-qs-th">Skills</th>
-                            <th>
-                                <div class="appform-textarea-qs">
-                                    <textarea name="skills" cols="50" rows="10"
-                                        placeholder="Skills related to your dreams & passions! This helps us determine what skills you may already have."
-                                        required></textarea>
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="appform-textarea-qs-th">Education</th>
-                            <th>
-                                <div class="appform-textarea-qs">
-                                    <textarea name="education" cols="50" rows="10"
-                                        placeholder="Tell us about the education you have in the area(s) you're passionate about! This helps us determine how knowledgable you are about your passions/dreams."
-                                        required></textarea>
-                                </div>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="appform-textarea-qs-th">Income Information</th>
-                            <th>
-                                <div class="appform-textarea-qs">
-                                    <textarea name="education" cols="50" rows="10"
-                                        placeholder="*IF NEEDED, MAKE ACTIVE ONLY IF FINANCIAL ASSISTANCE SELECTED ABOVE*"></textarea>
-                                </div>
-                            </th>
                         </tr>
                     </table><br>
 
@@ -485,12 +468,12 @@
                         <tr>
                             <th style="width: 45%;">Are you in need immediate assistance?</th>
                             <th>
-                                <label for="yes"><input type="checkbox" name="check1"
+                                <label for="yes" class="yescheck"><input type="checkbox" name="check1"
                                         onclick="onlyOneCheckbox1(this)">Yes</label>
-                                <label for="no"><input type="checkbox" name="check1" onclick="onlyOneCheckbox1(this)"
-                                        style="margin-left: 10%;">No</label>
-                                <label for="other"><input type="checkbox" name="check1" onclick="onlyOneCheckbox1(this)"
-                                        style="margin-left: 10%;">Other: </label>
+                                <label for="no" class="nocheck"><input type="checkbox" name="check1"
+                                        onclick="onlyOneCheckbox1(this)" style="margin-left: 10%;">No</label>
+                                <label for="other" class="othercheck"><input type="checkbox" name="check1"
+                                        onclick="onlyOneCheckbox1(this)" style="margin-left: 10%;">Other: </label>
                                 <input type="text" placeholder="If other, tell us why!" style="margin-left: 1%;">
                             </th>
                         </tr>
