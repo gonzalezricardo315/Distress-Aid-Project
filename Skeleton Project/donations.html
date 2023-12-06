@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link Basic Styles -->
+    <link rel="stylesheet" href="navbar_styles.css">
+    <!-- Link Script for Website Logo + Footer -->
+    <script src="script/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/aa1ecd88e1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Links for Footer design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <title>Donate Now</title>
     <style>
         header {
             background-color: #000000;
             color: #fff;
             text-align: center;
             padding: 20px;
+            padding-top: 3em;
         }
 
         body {
@@ -28,37 +46,12 @@
             background-color: #fff;
         }
 
-        ul.tab-list {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        ul.tab-list li {
-            float: center;
-        }
-
-        ul.tab-list li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul.tab-list li a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #000000;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
@@ -77,32 +70,84 @@
         ul.tab-list li:hover .dropdown-content {
             display: block;
         }
-
     </style>
+
+    <link rel="stylesheet" href="navbar_styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Donations</h1>
-    </header>
-
-    <ul class="tab-list">
-        <li class="dropdown">
-            <a href="javascript:void(0)">Services</a>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="aboutUs.html">About Us</a>
-                <a href="searchDatabase.html">Seach Database</a>
-                <a href="Services.html">Information Page</a>
-                <a href="successStories.html">Success Stories</a>                
+    <!-- Navbars for Website -->
+    <!-- Desktop/Tablet Nav --> 
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+                <!-- Logo Placeholder for Inlustration -->
+                <a class="nav-logo" href="home.html"><i class="fa-solid fa-person-rays"></i> DD</a>
             </div>
-        </li>
-    </ul>
-    <br><br>
 
-    <div class="container">
-        <h2>Who You can Donate too</h2>
-        <p>Will put link to who you can donate to here later or they can just donate to us directly.</p>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="searchDatabase.html">Search</a></li>
+                <li><a href="external.html">Extras</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Menu Icon for Mobile Nav -->
+    <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
     </div>
+
+    <!-- Menu for Mobile Nav -->
+    <div class="overlay-menu">
+        <ul id="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="searchDatabase.html">Search Database</a></li>
+            <li><a href="external.html">Extras</a></li>
+            <li><a href="donations.html">Donations</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="container">
+
+            <script type="text/javascript" src="https://form.jotform.com/jsform/232908783824164"></script>
+
+            <script src="navbar.js"></script>
+
+        </div>
+    </main>
+
+    <!-- Footer Element -->
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html">Home</a></li>
+                <li class="list-inline-item"><a href="Services.html">Services</a></li>
+                <li class="list-inline-item"><a href="aboutUs.html">About</a></li>
+                <li class="list-inline-item"><a href="apply.html">Apply</a></li>
+                <li class="list-inline-item"><a href="donations.html">Donations</a></li>
+                <li class="list-inline-item"><a href="searchDatabase.html">Search</a></li>
+                <li class="list-inline-item"><a href="external.html">Extras</a></li>
+            </ul>
+            <a href="aboutus.html" style="padding-top: 0%;"><p class="copyright">Disintegrate Distress © 2023</p></a>
+        </footer>
+    </div>
+
 </body>
+
 </html>

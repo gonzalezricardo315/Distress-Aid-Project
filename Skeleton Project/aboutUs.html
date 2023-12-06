@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link Script for Website Logo + Footer -->
+    <script src="script/navbar.js"></script>
+    <script src="https://kit.fontawesome.com/aa1ecd88e1.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Links for Footer design -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
     <title>About Us</title>
     <style>
-        header {
-            background-color: #000000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
         body {
             font-family: 'Times New Roman', Times, serif, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-image: url('images/Team6.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            padding-top: 3em;
         }
 
         .container {
@@ -25,86 +36,223 @@
             margin: 0 auto;
             text-align: center;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffffab;
         }
 
-        ul.tab-list {
-            list-style-type: none;
-            margin: 0;
+        .container p {
+            color: #777;
+        }
+
+        .team-img {
+            width: 80%;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .team-section {
+            background-color: #808080c0;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .team-section ul {
+            list-style: none;
+            /* Remove default list style */
             padding: 0;
-            overflow: hidden;
-            background-color: #333;
+            /* Remove padding */
         }
 
-        ul.tab-list li {
-            float: center;
+        .team-section li {
+            margin-left: 1em;
+            /* Add a left margin to the list items */
         }
 
-        ul.tab-list li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul.tab-list li a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #000000;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
+        .team-member {
+            margin-bottom: 20px;
             text-align: center;
         }
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
-
-        ul.tab-list li:hover .dropdown-content {
+        .team-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
             display: block;
         }
 
+        .team-member h3 {
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        .team-member p {
+            color: #555;
+            font-size: 0.9em;
+            line-height: 1.4em;
+            margin-bottom: 15px;
+
+        }
     </style>
+
+    <link rel="stylesheet" href="navbar_styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>About Us</h1>
-    </header>
-
-    <ul class="tab-list">
-        <li class="dropdown">
-            <a href="javascript:void(0)">Services</a>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="searchDatabase.html">Seach Database</a>
-                <a href="Services.html">Information Page</a>
-                <a href="successStories.html">Success Stories</a>
-                <a href="donations.html">Donations</a>
+    <!-- Navbars for Website -->
+    <!-- Desktop/Tablet Nav --> 
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+                <!-- Logo Placeholder for Inlustration -->
+                <a class="nav-logo" href="home.html"><i class="fa-solid fa-person-rays"></i> DD</a>
             </div>
-        </li>
-    </ul>
-    <br><br>
 
-    <div class="container">
-        <h2>Our Story</h2>
-        <p>Just write a little bit about the story.</p>
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="searchDatabase.html">Search</a></li>
+                <li><a href="external.html">Extras</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <h2>Our Mission</h2>
-        <p>Just write why i am doing this.</p>
+    <!-- Menu Icon for Mobile Nav -->
+    <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+    </div>
+
+    <!-- Menu for Mobile Nav -->
+    <div class="overlay-menu">
+        <ul id="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="aboutUs.html">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="searchDatabase.html">Search Database</a></li>
+            <li><a href="external.html">Extras</a></li>
+            <li><a href="donations.html">Donations</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="container" style="padding-top: 3%;">
+            <h2>Our Story</h2>
+            <p>In the wake of several calamities that shook the world, a group of passionate individuals realized the
+                pressing need for a consolidated system to aid those in distress. Whether it was natural disasters or
+                personal emergencies, the absence of a comprehensive relief system meant that help often arrived too
+                late, or not at all. From this stark reality, our Distress Relief System was born. Driven by
+                cutting-edge technology and a genuine desire to make a difference, we've dedicated countless hours to
+                building a platform that ensures timely assistance to those in need, bridging the gap between tragedy
+                and aid.</p>
+
+            <h2>Our Mission</h2>
+            <p>Our mission is more than just offering a solution; it's a promise to be a beacon of hope in times of
+                darkness. We're committed to revolutionizing the way distress relief is approached and delivered.
+                Through innovative technology and unwavering compassion, we strive to reach out to every individual
+                facing adversity, ensuring that no cry for help goes unheard.</p>
+            <!-- test commit -->
+
+            <img class="team-img"
+                src="images/IMG_1146.jpg"
+                alt="Team Collaboration">
+            <div class="team-section">
+
+                <div class="container">
+                    <h2>Our Business hours</h2>
+                    <p>We are available to serve you during the following hours:</p>
+                    <ul>
+                        <li>Monday - Friday: 9:00 AM to 5:00 PM</li>
+                        <li>Saturday : 10:00 AM to 2:00 PM</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                    <p>If you need to reach us outside of our scheduled hours, you may do so via email or telephone.</p>
+                    <ul>
+                        <li>Email: disintegratedistress@gmail.com</li>
+                        <li>Telephone: (435)555-6971</li>
+                    </ul>
+                </div>
+
+                <div class="team-section">
+                    <h2>Meet Our Team</h2>
+                    <div class="team-member">
+                        <img src="images/pictureforcameron.jpg" alt="Cameron" class="team-img">
+                        <h3>Cameron - Project Manager</h3>
+                        <p>Cameron is the visionary leader of our team, with a keen eye for detail and a passion for
+                            excellence. With over a decade of experience in project management, Cameron ensures that our
+                            missions are accomplished with precision and grace.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/pictureforcedric.jpg" alt="Cedric" class="team-img">
+                        <h3>Cedric - Developer</h3>
+                        <p>Cedric is the coding wizard, turning coffee into code. He's the backbone of our development
+                            team, always ready to tackle the next challenge with a smile.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/picturefprricky.jpg" alt="Ricky" class="team-img">
+                        <h3>Ricky - Designer</h3>
+                        <p>Ricky is our creative genius, making sure our projects look as good as they function. His eye
+                            for design is unmatched, bringing a visual appeal to our solutions.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/pictureforzuhdi.jpg" alt="Zuhdi" class="team-img">
+                        <h3>Zuhdi - Developer</h3>
+                        <p>Zuhdi's analytical skills and programming prowess make him an invaluable asset to our
+                            development team. He's always ready to dive into code and solve complex problems.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/pictureforyubin.jpg" alt="Yubin" class="team-img">
+                        <h3>Yubin - Content Specialist</h3>
+                        <p>Yubin has a way with words, crafting compelling narratives that resonate with our audience.
+                            Her content strategies are key to our communication and outreach.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/pictureforzixi.jpg" alt="Zixi" class="team-img">
+                        <h3>Zixi - SEO Consultant</h3>
+                        <p>Zixi's expertise in SEO helps ensure that our digital presence is strong. Her strategies
+                            improve our visibility and help us reach the people who need us most.</p>
+                    </div>
+                </div>
+                <h2>Meet Our Team</h2>
+                <ul>
+                    <li style="color: red;">Cameron: Project Manager</li>
+                    <li style="color: orange;">Cedric: Developer</li>
+                    <li style="color: black;">Ricky: Designer</li>
+                    <li style="color: green;">Zuhdi: Developer</li>
+                    <li style="color: cyan;">Yubin: Content Specialist</li>
+                    <li style="color: pink;">Zixi: SEO Consultant</li>
+                </ul>
+            </div>
+
+            <script src="navbar.js"></script>
+
+    </main>
+
+    <!-- Footer Element -->
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon ion-social-linkedin"></i></a>
+                <a href="#"><i class="icon ion-social-instagram"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="home.html">Home</a></li>
+                <li class="list-inline-item"><a href="Services.html">Services</a></li>
+                <li class="list-inline-item"><a href="aboutUs.html">About</a></li>
+                <li class="list-inline-item"><a href="apply.html">Apply</a></li>
+                <li class="list-inline-item"><a href="donations.html">Donations</a></li>
+                <li class="list-inline-item"><a href="searchDatabase.html">Search</a></li>
+                <li class="list-inline-item"><a href="external.html">Extras</a></li>
+            </ul>
+            <a href="aboutus.html" style="padding-top: 0%;"><p class="copyright">Disintegrate Distress © 2023</p></a>
+        </footer>
     </div>
 </body>
+
 </html>

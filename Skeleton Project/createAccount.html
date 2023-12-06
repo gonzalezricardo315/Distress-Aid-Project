@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.jpeg');
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .small-link {
+            font-size: 14px;
+            background-color: #ffff;
+        }
+
+        .login-body {
+            background-image: url('../images/skyblueDream2.jpg');
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .login-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 12%;
+            padding-top: 12%;
+            /* background-color: #00000081; */
+        }
+
+        .login-form {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        #username,
+        #password {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        #login-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        #login-submit {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #login-submit:hover {
+            background-color: #676767;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <div class="login-container">
+            <form class="login-form" action="create.php" method="post">
+                <label for="login" id="login-label">Create Account:</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+                <input type="text" id="password" name="password" placeholder="Password">
+                <button type="submit" id="login-submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
